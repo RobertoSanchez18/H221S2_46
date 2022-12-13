@@ -1,0 +1,1420 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&display=swap");
+
+.menu {
+  position: static;
+  background-color: #D71C23;
+  height: 75px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  /* z-index: 50; */
+}
+
+.logo {
+  width: 220px;
+  padding: 0 80px;
+}
+
+.menu_items {
+  display: flex;
+  list-style: none;
+  margin-right: 10px;
+  margin-top: 14px;
+  padding: 20px;
+}
+
+.menu_items li {
+  border-radius: 3px;
+  margin: 0px 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.menu_items li a {
+  padding: 7px 13px;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  color: #fff;
+}
+
+.menu_items li:hover {
+  background-color: rgba(0, 0, 0, .9);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.menu-vertical {
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: rgba(0, 0, 0, .9);
+  padding-left: 0px;
+}
+.menu-vertical li:hover{
+  background-color: #f8df89;
+}
+
+.menu_items li:hover .menu-vertical {
+  display: block;
+}
+
+.btn_menu {
+  margin-right: 30px;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+ul.show {
+  top: 65px;
+}
+
+
+/*
+@media screen and (max-width: 858px) {
+  .slider {
+    background-image: url("/img/banner4.jpg");
+    background-size: cover;
+  }
+
+  .slider li img {
+    display: none;
+  }
+
+}
+*/
+
+.slider {
+  width: 100%;
+  margin: auto;
+  height: 670px;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: cambio 20s infinite alternate;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  width: 100%;
+  height: 670px;
+}
+
+@keyframes cambio {
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+  
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+   
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+  
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
+.card-reseña {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: #f8df89;
+  padding: 80px;
+}
+
+.card-reseña h1{
+  padding: 20px 0px;
+}
+
+.card-reseña p{
+  font-size: 16px;
+}
+
+.animado {
+  opacity: 0;
+  animation: myAnim1 2s ease 0s 1 normal forwards; 
+}
+
+@keyframes myAnim1 {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.card-reseña img {
+  position: absolute;
+  width: 500px;
+  left: 750px;
+  top: 150px;
+  padding: 40px;
+  margin-right: 40px;
+}
+
+.container-fluid {
+  position: relative;
+  width: 100%;
+  background-color: #f8df89;
+} 
+
+.card {
+  margin: 10px;
+}
+
+.container {
+  padding: 80px;
+}
+
+.card-director{
+  position: relative;
+}
+
+.img-director {
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(/img/Director\ 1\ -\ copia.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  width: 100%;
+  background-attachment:fixed;
+}
+
+.img-director::after {
+  content: '';
+  background: black;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+}
+
+.col h1 {
+  position: absolute;
+  display: inline;
+  top: 50px;
+  left: 720px;
+  color: rgb(255, 255, 255);
+}
+
+.palabras {
+  position: absolute;
+  width: 450px;
+  top: 130px;
+  left: 700px;
+  font-size: 16px;
+  color: rgb(255, 255, 255); 
+  text-align: left;
+}
+
+#container_SantoPatron {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-color: #f8df89;
+}
+
+.container_patron{
+  position: relative;
+  width: 600px;
+  height: 600px;
+  padding: 20px;
+  top: 50px;
+}
+
+.container_patron h1{
+  padding: 10px;
+  margin-left: 80px;
+}
+
+.container_patron img {
+  position: absolute;
+  width: 300px; 
+  left: 200px;
+  margin: 20px;
+  border-radius: 12px;
+}
+
+.container_oracion {
+  position: absolute;
+  width: 500px;
+  top: 110px;
+  left: 750px;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.container_oracion h1 {
+  padding: 20px 0;
+}
+
+
+#galeria-container{
+  position: relative; 
+  width: 100%;
+  height: 600px;
+  background-color: rgb(151, 153, 151);
+}
+/********/
+.carrousel {
+  width: 90%;
+  max-width: 120em;
+  padding: 2em;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  /*overflow: hidden;*/
+}
+
+.carrousel .grande {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  padding: 2em;
+  transition: all 0.5s ease;
+  transform: translateX(0%);
+}
+
+.carrousel .img {
+  width: calc( 100% / 2 - 2em);
+  min-height: 10vh;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.carrousel .puntos {
+  width: 100%;
+  margin: 1em 0 0;
+  padding: 0.4em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrousel .punto {
+  width: 2em;
+  height: 2em;
+  margin: 1em 1em 0;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.carrousel .punto.activo {
+  background-color: lightblue;
+}
+/***********/
+/*Contenedor de los Documentos de Gestion*/
+#container_DocGestion {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image: url(/img/banner4-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/*Poner opacidad al fondo de nuestro contenedor*/
+#container_DocGestion::after {
+  content: '';
+  background: rgb(238, 237, 237);
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+}
+/*Ponieno valores a los cajas titulos e imagenes*/
+#container_DocGestion div {
+  position: relative;
+  display:inline-block; 
+  z-index: 10;
+}
+
+.pei {
+  top: 200px;
+  left: 200px
+}
+
+.pat {
+  top: 350px;
+  left: 450px;
+}
+
+.ri {
+  top: 200px;
+  left: 700px
+}
+
+.pei h2 {
+  position: absolute;
+  display: inline-block;
+  top: 50px;
+  left: 50px;
+  color: white;
+}
+
+.pat h2 {
+  position: absolute;
+  display: inline-block;
+  top: 50px;
+  left: 50px;
+  color: white;
+}
+
+.ri h2 {
+  position: absolute;
+  display: inline-block;
+  top: 50px;
+  left: 60px;
+  color: white;
+}
+/*Aqui acaba el contenedor de los documentos de Gestion*/
+#container_Plana_Docente{
+  width: 100%;
+  height: 600px;
+  background-color: rgb(151, 153, 151); 
+}
+
+#container_ActivityCalenar{
+  width: 100%;
+  height: 600px;
+  background-color: rgb(151, 153, 151); 
+}
+
+#container_Himno {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  text-align: center;
+  border: 1px solid red;
+}
+
+.title_himno {
+  width: 100%;
+  padding: 20px;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+  background-color: #D71C23;
+  color: white;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.himno {
+  margin: 40px 0px;
+}
+
+.caracteristicas_colegio {
+  width: 100%;
+  background-color: #D71C23;
+  color: white;
+  text-align: center;
+}
+
+.caracteristicas_colegio p {
+  margin: 10px 40px;
+}
+
+.escudo_himno {
+  position: absolute;
+  display: inline-block;
+  top: 400px;
+  left: 100px;
+  
+}
+
+.escudo_himno img {
+  width: 100px;
+}
+
+.container_mapa {
+  width: 100%;
+  height: 500px;
+}
+
+.container_mapa img {
+  width: 100%;
+  height: 500px;
+}
+
+#container_formulario {
+  width: 100%;
+  height: 700px;
+  background-color: #f8df89;
+  text-align: center;
+  z-index: 20;
+}
+
+.title_form {
+  padding: 20px;
+}
+
+.form {
+  margin: 0px 40px;
+  align-items: center;
+}
+
+.form-control {
+  margin-bottom: 10px;
+} 
+
+.btn-secondary {
+  background-color: #D71C23;
+}
+
+#footer {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+#footer img {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+}
+
+.title_rs {
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  top: 460px;
+  margin-left: 30px;
+  color: white;
+}
+
+.title_rs h2 {
+  font-size: 20px;
+}
+
+.socialNetwork {
+  position: relative;
+  width: 400px;
+  height: 90px;
+  text-align: center;
+  top: 500px;
+}
+
+.social {
+  margin: 10px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.fb{
+  position: absolute;
+  max-width: 50px;
+  max-height: 50px;
+  top: 10px;
+  left: 20px;
+}
+
+.twitter {
+  position: absolute;
+  max-width: 50px;
+  max-height: 50px;
+  top: 10px;
+  left: 80px;
+}
+
+.instagram {
+  position: absolute;
+  max-width: 50px;
+  max-height: 50px;
+  top: 10px;
+  left: 140px;
+}
+
+.youtube {
+  position: absolute;
+  max-width: 50px;
+  max-height: 50px;
+  top: 10px;
+}
+
+.direccion {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  top: 170px;
+  left: 900px;
+  color: white;
+  font-size: 14px;
+}
+
+.horarioAtencion {
+  position: absolute;
+  top: 300px;
+  left: 900px;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-contacto{
+  position: absolute;
+  top: 500px;
+  left: 900px;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-insignia {
+  position: absolute;
+  width: 220px;
+  height: 260px;
+  padding: 10px;
+  top: 20px;
+  left: 150px;
+}
+
+.footer-insignia img {
+  max-width: 200px;
+  max-height: 250px;
+}
+
+@media screen and (max-width: 952px) {
+  .logo {
+    height: 60px;
+    padding-left: 35px;
+  }
+
+  .menu_items li a {
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width: 858px) {
+  .menu {
+    height: 65px;
+  }
+
+  .btn_menu {
+    display: inline-flex;
+    margin-right: 5px;
+  }
+
+  .menu_items {
+    position: fixed;
+    width: 100vw;
+    height: calc(50% - 45px);
+    background: #414141;
+    top: -100vh;
+    text-align: center;
+    transition: all 0.4s;
+    flex-direction: column;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    z-index: 40;
+  }
+
+  .menu_items li {
+    margin: 30px 0 0 0;
+    line-height: 30px;
+  }
+
+  .menu_items li:hover {
+    background: none;
+  }
+
+  .menu_items li a {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .menu_items li a:hover {
+    color: #ed3338;
+  }
+
+  .logo {
+    width: 150px;
+    height: 60px;
+    padding-left: 15px;
+  }
+
+  .menu_items li a {
+    font-size: 16px;
+  }
+
+  .card-reseña p{
+    margin-top: 40px;
+    width: 600px;
+    font-size: 14px;
+  }
+
+  .card-reseña img {
+    display: none;
+  }
+
+  .col h1 {
+    left: 100px;
+    font-size: 20px;
+  }
+
+  .palabras {
+    left: 100px;
+    font-size: 14px;
+  } 
+
+  .container_patron h1{
+    padding: 10px;
+    margin-left: 5px;
+    font-size: 30px;
+  }
+
+  .container_patron img {
+    width: 300px; 
+    left: 60px;
+    margin: 20px;
+    border-radius: 12px;
+  }
+
+  .container_oracion {
+    width: 300px;
+    top: 110px;
+    left: 500px;
+    font-size: 12px;
+    padding: 20px;
+  }
+
+  .pei {
+    top: 200px;
+    left: 40px
+  }
+
+  .pat {
+    top: 350px;
+    left: 200px;
+  }
+
+  .ri {
+    top: 200px;
+    left: 350px
+  }
+
+  .title {
+    position: absolute;
+    left: -200px;
+  }
+
+  #footer img {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+  }
+
+  .direccion {
+    width: 300px;
+    height: 100px;
+    top: 170px;
+    left: 500px;
+    font-size: 14px;
+  }
+
+  .horarioAtencion {
+    top: 300px;
+    left: 500px;
+    font-size: 14px;
+  }
+  
+  .footer-contacto{
+    top: 500px;
+    left: 500px;
+    font-size: 14px;
+  }
+  .footer-insignia {
+    width: 220px;
+    height: 260px;
+    padding: 10px;
+    top: 20px;
+    left: 60px;
+  }
+
+}
+
+@media screen and (max-width: 858px) and (orientation: landscape) {
+  .menu_items li {
+    margin: 5px 0 0 0;
+  }
+
+  .menu_items {
+    overflow: scroll;
+    height: calc(100% - 65px);
+  }
+}
+
+/*Medidas a partir e 1278px para abajo*/
+@media screen and (max-width: 1278px) {
+  .card-reseña img {
+    width: 500px;
+    left: 650px;
+    top: 150px;
+    padding: 40px;
+    margin-right: 40px;
+  }
+
+  .container_oracion {
+    width: 400px;
+    top: 110px;
+    left: 700px;
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  .title {
+    position: absolute;
+    left: -20px;
+  }
+
+  .pei {
+    top: 200px;
+    left: 150px
+  }
+
+  .pat {
+    top: 350px;
+    left: 400px;
+  }
+
+  .ri {
+    top: 200px;
+    left: 650px
+  }
+
+  .direccion {
+    width: 300px;
+    height: 100px;
+    top: 170px;
+    left: 800px;
+    font-size: 14px;
+  }
+
+  .horarioAtencion {
+    top: 300px;
+    left: 800px;
+    font-size: 14px;
+  }
+  
+  .footer-contacto{
+    top: 500px;
+    left: 800px;
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 1178px) {
+  .card-reseña img {
+    width: 500px;
+    left: 600px;
+    top: 150px;
+    padding: 40px;
+    margin-right: 40px;
+  }
+
+  .col h1 {
+    left: 600px;
+    font-size: 30px;
+  }
+
+  .palabras {
+    left: 600px;
+    font-size: 16px;
+  } 
+
+  .container_oracion {
+    width: 400px;
+    top: 110px;
+    left: 600px;
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  .title {
+    position: absolute;
+    left: -80px;
+  }
+
+  .pei {
+    top: 200px;
+    left: 100px
+  }
+
+  .pat {
+    top: 350px;
+    left: 350px;
+  }
+
+  .ri {
+    top: 200px;
+    left: 600px
+  }
+
+  .direccion {
+    width: 300px;
+    height: 100px;
+    top: 170px;
+    left: 700px;
+    font-size: 14px;
+  }
+
+  .horarioAtencion {
+    top: 300px;
+    left: 700px;
+    font-size: 14px;
+  }
+  
+  .footer-contacto{
+    top: 500px;
+    left: 700px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1127px) {
+  .card-reseña img {
+    width: 400px;
+    left: 600px;
+    top: 150px;
+    padding: 40px;
+    margin-right: 40px;
+  }
+
+
+  .card-reseña p{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .col h1 {
+    left: 400px;
+    font-size: 30px;  
+  }
+
+  .palabras {
+    left: 400px;
+    font-size: 16px;
+  } 
+
+  .container_patron h1{
+    padding: 10px;
+    margin-left: 5px;
+    font-size: 30px;
+  }
+
+  .container_patron img {
+    width: 300px; 
+    left: 60px;
+    margin: 20px;
+    border-radius: 12px;
+  }
+
+  .container_oracion {
+    width: 400px;
+    top: 110px;
+    left: 500px;
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  .pei {
+    top: 200px;
+    left: 80px
+  }
+
+  .pat {
+    top: 350px;
+    left: 300px;
+  }
+
+  .ri {
+    top: 200px;
+    left: 500px
+  }
+
+  .title {
+    position: absolute;
+    left: -140px;
+  }
+
+  .footer-insignia {
+    width: 220px;
+    height: 260px;
+    padding: 10px;
+    top: 20px;
+    left: 100px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .card-reseña img {
+    width: 400px;
+    left: 500px;
+    top: 150px;
+    margin: 0px 40px;
+  }
+}
+
+@media screen and (max-width: 1014px) {
+  .direccion {
+    width: 300px;
+    height: 100px;
+    top: 170px;
+    left: 550px;
+    font-size: 14px;
+  }
+
+  .horarioAtencion {
+    top: 300px;
+    left: 550px;
+    font-size: 14px;
+  }
+  
+  .footer-contacto{
+    top: 500px;
+    left: 550px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .card-reseña img {
+    width: 300px;
+    left: 450px;
+    top: 200px;
+  }
+
+  .container_patron h1{
+    padding: 10px;
+    margin-left: 5px;
+    font-size: 30px;
+  }
+
+  .container_patron img {
+    width: 300px; 
+    left: 20px;
+    margin: 10px;
+    border-radius: 12px;
+  }
+
+  .container_oracion {
+    width: 400px;
+    top: 110px;
+    left: 400px;
+    font-size: 14px;
+    padding: 20px;
+  } 
+
+  .pei {
+    top: 200px;
+    left: 40px
+  }
+
+  .pat {
+    top: 350px;
+    left: 200px;
+  }
+
+  .ri {
+    top: 200px;
+    left: 350px
+  }
+
+  .title {
+    position: absolute;
+    left: -200px;
+  }
+
+}
+
+@media screen and (max-width: 978px) {
+  .card-reseña p{
+    margin-top: 40px;
+    width: 600px;
+    font-size: 14px;
+  }
+
+  .card-reseña img {
+    display: none;
+  }
+
+  .col h1 {
+    left: 300px;
+    font-size: 20px;
+  } 
+
+  .palabras {
+    width: 300px;
+    left: 300px;
+    font-size: 14px;
+  } 
+
+  .direccion {
+    width: 300px;
+    height: 100px;
+    top: 170px;
+    left: 450px;
+    font-size: 14px;
+  }
+
+  .horarioAtencion {
+    top: 300px;
+    left: 450px;
+    font-size: 14px;
+  }
+  
+  .footer-contacto{
+    top: 500px;
+    left: 450px;
+    font-size: 14px;
+  }
+
+  .footer-insignia {
+    width: 220px;
+    height: 260px;
+    padding: 10px;
+    top: 20px;
+    left: 60px;
+  }
+}
+
+@media  screen and (max-width: 828px) {
+  .pei {
+    top: 200px;
+    left: 40px
+  }
+
+  .pat {
+    top: 350px;
+    left: 150px;
+  }
+
+  .ri {
+    top: 200px;
+    left: 250px
+  }
+
+  .title {
+    top: -120px;
+    left: 200px;
+  }
+
+  .container_patron img {
+    width: 300px; 
+    left: 100px;
+    margin: 20px;
+    border-radius: 12px;
+  }
+
+  .container_oracion {
+    display: none;
+  }
+
+  .direccion {
+    width: 300px;
+    height: 100px;
+    top: 170px;
+    left: 350px;
+    font-size: 14px;
+  }
+
+  .horarioAtencion {
+    top: 300px;
+    left: 350px;
+    font-size: 14px;
+  }
+  
+  .footer-contacto{
+    top: 500px;
+    left: 350px;
+    font-size: 14px;
+  }
+  .footer-insignia {
+    width: 220px;
+    height: 260px;
+    padding: 10px;
+    top: 20px;
+    left: 40px;
+  }
+}
+
+@media  screen and (max-width: 760px) {
+  .card-reseña p{
+    position: absolute;
+    margin-top: 40px;
+    width: 600px;
+    font-size: 14px;
+    left: 20px;
+    top: 150px;
+  }
+
+  .card-reseña h1{
+    position: absolute;
+    padding: 20px 0px;
+    left: 20px;
+  } 
+}
+
+@media  screen and (max-width: 700px) {
+  .card-reseña p{
+    position: absolute;
+    margin-top: 40px;
+    width: 400px;
+    font-size: 14px;
+    left: 20px;
+    top: 150px;
+  }
+
+  .pei {
+    top: 200px;
+    left: 10px
+  }
+
+  .pat {
+    top: 350px;
+    left: 50px;
+  }
+
+  .ri {
+    top: 200px;
+    left: 100px
+  }
+
+  .title {
+    position: absolute;
+    left: 100px;
+  }
+}
+
+
+@media  screen and (max-width: 665px) {
+  .col h1 {
+    left: 100px;
+    font-size: 20px;
+  }
+  .palabras {
+    left: 100px;
+    font-size: 14px;
+  } 
+
+  .pei {
+    top: 200px;
+    left: 10px
+  }
+
+  .pat {
+    top: 350px;
+    left: 10px;
+  }
+
+  .ri {
+    top: 200px;
+    left: 10px
+  }
+
+  .title {
+    position: absolute;
+    left: 80px;
+  }
+
+  .escudo_himno {
+    display: none;
+  }
+
+  .img-footer {
+    display: none;
+  }
+
+  #footer {
+    background-color: #D71C23;
+  }
+
+  .direccion {
+    width: 200px;
+    height: 100px;
+    top: 170px;
+    left: 280px;
+    font-size: 12px;
+  }
+
+  .horarioAtencion {
+    top: 300px;
+    left: 280px;
+    font-size: 12px;
+  }
+  
+  .footer-contacto{
+    top: 500px;
+    left: 280px;
+    font-size: 12px;
+  }
+
+  .footer-insignia {
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+    top: 100px;
+    left: 40px;
+  }
+  .slider {
+    background-image: url("/img/banner4.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .slider li img {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .card-reseña h1{
+    position: absolute;
+    padding: 20px 0px;
+    left: 10px;
+  } 
+
+  .card-reseña p{
+    position: absolute;
+    margin-top: 40px;
+    width: 300px;
+    font-size: 12px;
+    left: 5px;
+    top: 150px;
+  }
+
+  .col h1 {
+    top: 140px;
+    left: 40px;
+    font-size: 20px;
+  }
+  .palabras {
+    top: 200px;
+    left: 40px;
+    font-size: 14px;
+  } 
+
+
+  .container_patron h1{
+    padding: 10px;
+    margin-left: 2px;
+    font-size: 30px;
+  }
+
+  .container_patron img {
+    width: 300px; 
+    left: 20px;
+    margin: 10px;
+    border-radius: 12px;
+  }
+
+  .pei {
+    top: 150px;
+    left: 30px
+  }
+
+  .pat {
+    top: 150px;
+    left: 80px;
+  }
+
+  .ri {
+    top: 200px;
+    left: 140px
+  }
+
+  .title {
+    position: absolute;
+    top: -300px;
+    left: 40px;
+  }
+  
+  .footer-insignia {
+    width: 120px;
+    height: 10px;
+    padding: 10px;
+    top: 100px;
+    left: 30px;
+  }
+
+  .direccion {
+    width: 200px;
+    height: 100px;
+    top: 80px;
+    left: 200px;
+    font-size: 12px;
+  }
+
+  .horarioAtencion {
+    top: 200px;
+    left: 200px;
+    font-size: 12px;
+  }
+
+  .footer-contacto{
+    top: 380px;
+    left: 200px;
+    font-size: 12px;
+  }
+
+}
